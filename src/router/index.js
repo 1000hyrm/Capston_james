@@ -14,25 +14,21 @@ import signUp from '@/components/signUp'
 
 Vue.use(Router);
 
+// NavigationDuplicated error catch
+['push','replace'].forEach(method => {
+  const originalMethod = Router.prototype[method];
+  Router.prototype[method] = function m(location) {
+    return originalMethod.call(this, location).catch(error => {
+      if (error.name !== 'NavigationDuplicated') {
+        // capture exception
+      }
+    })
+  };
+});
+
 export default new Router({
+  mode: 'history',
   routes: [
-    /*{
-      path: '/',
-      // name: 'home',
-      components:{
-        header: header,
-        default: home,
-        footer: footer
-      }
-    },
-    {
-      path: '/login',
-      components: {
-        header: header,
-        default: login,
-        footer: footer
-      }
-    },*/
     {
       //첫 로그인 화면
       path: '/',
@@ -78,13 +74,14 @@ export default new Router({
     {
       //온습도 등 우리집 케어 화면
       path: '/care',
+      name: 'care',
       components: {
         header: header,
         default: care,
         footer: footer
       }
-     },
-     {
+    },
+    {
        //제임스 소개 화면
       path: '/james',
       components: {

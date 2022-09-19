@@ -5,7 +5,7 @@
         <input type="search" placeholder="Search">
         <span>검색</span>
       </form>
-      <a href="#" id="log-in"@click="login1">LOGIN</a>
+      <a href="#" id="log-in" @click="login1">LOGIN</a>
       <h2>제임스, 우리집을 부탁해!</h2>
       <p>내가 없는 우리집에선 무슨 일이 일어날까?</p>
       <div>
@@ -89,6 +89,7 @@ opacity: 0.5;
     top:60px;
     left:25px;
     color:white;
+    display: inline-block;
   }
   #head_area{
     height:220px;
