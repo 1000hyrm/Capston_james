@@ -8,16 +8,9 @@
 </template>
 
 <script>
-// import header from '@/components/header.vue'
-// import footer from '@/components/footer.vue'
-//
-// export default {
-//   components:{
-//     'header': header,
-//     'footer': footer
-//   }
-//   // name: 'App'
-// }
+export default {
+  name: 'App'
+}
 </script>
 
 <style scoped>
