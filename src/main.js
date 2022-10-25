@@ -3,7 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-//import mariadb from './database'
+import store from './store'
+import vueCookies from './cookie.js'
 
 Vue.config.productionTip = false
 
@@ -11,7 +12,11 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  store,
+  vueCookies,
+  components: {
+    App,
+  },
   template: '<App/>',
   mode: 'history'
 })

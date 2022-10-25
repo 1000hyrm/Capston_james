@@ -2,15 +2,18 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import james from '@/components/james'
+import james2 from '@/components/slider'
 import home from '@/components/home'
 import header from '@/components/header'
 import login from '@/components/login'
+import login2 from '@/components/login2'
 import App from '@/App.vue'
 import footer from '@/components/footer'
 import homecctv from '@/components/homecctv'
 import news from '@/components/news'
 import care from '@/components/care'
 import signUp from '@/components/signUp'
+import signUp2 from '@/components/signUp2'
 
 Vue.use(Router);
 
@@ -34,7 +37,8 @@ export default new Router({
       path: '/',
       components: {
         header: header,
-        default: login,
+        // default: login,
+        default: login2,
         footer: footer
       }
     },
@@ -50,8 +54,20 @@ export default new Router({
     {
       //회원가입 화면
       path: '/SignUp',
-      name: 'signUp',
-      component: signUp
+      components: {
+        header: header,
+        default: signUp,
+        footer: footer
+      }
+    },
+    {
+      //회원가입 화면
+      path: '/SignUp2',
+      components: {
+        header: header,
+        default: signUp2,
+        footer: footer
+      }
     },
     {
       //cctv 화면
@@ -87,6 +103,15 @@ export default new Router({
       components: {
         header: header,
         default: james,
+        footer: footer
+      }
+    },
+    {
+       //제임스 소개 화면2
+      path: '/james2',
+      components: {
+        header: header,
+        default: james2,
         footer: footer
       }
     },
