@@ -1,7 +1,7 @@
 <template>
-    <div>
-      <p>Footer 01023456789 대전광역시 유성구 덕명동</p>
-    </div>
+  <div class="footer">
+    <p>Footer 01023456789 대전광역시 유성구 덕명동</p>
+  </div>
 </template>
 
 <script>
@@ -11,9 +11,9 @@ export default {
 </script>
 
 <style scoped>
-  *{
-      background-color:#1F1F1F;
-      height: 100px;
-      color:white;
-  }
+* {
+  background-color: #1F1F1F;
+  height: 3em;
+  color: white;
+}
 </style>

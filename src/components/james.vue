@@ -4,7 +4,7 @@
       <br><br>
       <span class="text1">ABOUT JAMES</span><br>
       <span>우리집을 지키는 제임스를 소개합니다</span>
-      <img class="pic4" name="JAMES"src="@/assets/pic4.png"/>
+      <img class="pic4" name="JAMES" src="@/assets/pic4.png"/>
       <div class="textbox1">제임스는, 사용자가 집을 비워도 집을 지켜주며
       일상에 도움을 주는 IoT 입니다.<br><br> 또한, 1인 가구와 독거노인의 삶의 질 향상
       및 위급상황과 고독사 방지를 위한 IoT 플랫폼 입니다. </div>
